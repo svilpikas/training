@@ -1,0 +1,26 @@
+<div class="login-main">
+    <div class="content">
+        <div class="wrapper">
+            <img class="logoAlign" src="assets/images/ic_lsmu_logo/drawable-mdpi/ic_lsmu_logo.png">
+            <form class="form">
+                <div class="main">
+                    <div class="loginLabel">PRISIJUNGIMAS</div>
+                    <mat-form-field class="input-width">
+                        <input matInput placeholder="El. paštas" name="email" [(ngModel)]="loginForm.email" required/>
+                    </mat-form-field>
+                    <br/>
+                    <mat-form-field class="input-width">
+                        <input matInput placeholder="Slaptažodis" type="password" name="password"
+                               [(ngModel)]="loginForm.password" required/>
+                    </mat-form-field>
+                    <br/>
+                    <button type="submit" mat-raised-button color="primary" class="login-submit-button"
+                            (click)="loginEvent()">Prisijungti
+                    </button>
+                    <br/>
+                    <button mat-raised-button class="remember">Pamiršote slaptažodį?</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
